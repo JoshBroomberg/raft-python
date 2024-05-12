@@ -1,0 +1,16 @@
+services:
+  node1:
+    build:
+      context: .
+    ports:
+      - "8001:8000"
+    environment:
+      - APP_NAME=node1
+
+  node2:
+    build:
+      context: .
+    ports:
+      - "8002:8000"
+    environment:
+      - NAME=node2
